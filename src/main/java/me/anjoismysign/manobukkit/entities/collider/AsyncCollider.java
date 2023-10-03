@@ -1,11 +1,11 @@
-package us.mytheria.manobukkit.entities.collider;
+package me.anjoismysign.manobukkit.entities.collider;
 
+import me.anjoismysign.manobukkit.entities.LogicController;
 import org.bukkit.entity.Entity;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 import org.jetbrains.annotations.NotNull;
-import us.mytheria.manobukkit.entities.LogicController;
 
 import java.util.Iterator;
 import java.util.Objects;

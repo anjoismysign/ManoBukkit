@@ -1,4 +1,4 @@
-package us.mytheria.manobukkit.entities.collider;
+package me.anjoismysign.manobukkit.entities.collider;
 
 import org.bukkit.entity.Entity;
 import org.bukkit.plugin.java.JavaPlugin;

@@ -1,8 +1,8 @@
-package us.mytheria.manobukkit;
+package me.anjoismysign.manobukkit;
 
+import me.anjoismysign.manobukkit.entities.ManoratorFactory;
+import me.anjoismysign.manobukkit.entities.collider.ColliderFactory;
 import org.bukkit.Bukkit;
-import us.mytheria.manobukkit.entities.ManoratorFactory;
-import us.mytheria.manobukkit.entities.collider.ColliderFactory;
 
 public class ManoBukkit {
     private static ManoBukkit instance;

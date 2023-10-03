@@ -1,12 +1,12 @@
-package us.mytheria.manobukkit.entities.decorators;
+package me.anjoismysign.manobukkit.entities.decorators;
 
 import com.nesaak.noreflection.NoReflection;
 import com.nesaak.noreflection.access.DynamicCaller;
+import me.anjoismysign.manobukkit.ManoBukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.jetbrains.annotations.NotNull;
-import us.mytheria.manobukkit.ManoBukkit;
 
 import java.lang.reflect.Method;
 import java.util.Objects;

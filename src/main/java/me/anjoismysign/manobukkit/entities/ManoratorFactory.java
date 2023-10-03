@@ -1,12 +1,12 @@
-package us.mytheria.manobukkit.entities;
+package me.anjoismysign.manobukkit.entities;
 
+import me.anjoismysign.manobukkit.entities.decorators.ManoBlockState;
+import me.anjoismysign.manobukkit.entities.decorators.ManoEntity;
+import me.anjoismysign.manobukkit.entities.decorators.ManoWorld;
 import org.bukkit.World;
 import org.bukkit.block.BlockState;
 import org.bukkit.entity.Entity;
 import org.jetbrains.annotations.NotNull;
-import us.mytheria.manobukkit.entities.decorators.ManoBlockState;
-import us.mytheria.manobukkit.entities.decorators.ManoEntity;
-import us.mytheria.manobukkit.entities.decorators.ManoWorld;
 
 /**
  * A factory for creating ManoDecorators

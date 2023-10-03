@@ -1,12 +1,12 @@
-package us.mytheria.manobukkit.entities.decorators;
+package me.anjoismysign.manobukkit.entities.decorators;
 
 import com.nesaak.noreflection.NoReflection;
 import com.nesaak.noreflection.access.DynamicCaller;
 import com.nesaak.noreflection.access.FieldAccess;
+import me.anjoismysign.manobukkit.ManoBukkit;
 import org.bukkit.Location;
 import org.bukkit.block.BlockState;
 import org.jetbrains.annotations.NotNull;
-import us.mytheria.manobukkit.ManoBukkit;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -30,6 +30,8 @@ public class ManoBlockState {
             ManoBukkit.getInstance().getCraftBukkitClass("block.CraftBlockState");
     private final static Class<?> CRAFT_WORLD_CLASS =
             ManoBukkit.getInstance().getCraftBukkitClass("CraftWorld");
+    private final static Class<?> NMS_WORLD_CLASS =
+            ManoBukkit.getInstance().getNMSClass("server.level.WorldServer");
     private final static Field POSITION_FIELD;
 
     static {
@@ -64,7 +66,7 @@ public class ManoBlockState {
 
     static {
         try {
-            SET_WORLD_HANDLE = CRAFT_WORLD_CLASS.getDeclaredMethod("setWorldHandle", NMS_WORLD.getReturnType());
+            SET_WORLD_HANDLE = CRAFT_BLOCK_STATE_CLASS.getDeclaredMethod("setWorldHandle", NMS_WORLD.getReturnType());
         } catch (NoSuchMethodException e) {
             throw new RuntimeException(e);
         }

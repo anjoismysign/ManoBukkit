@@ -1,4 +1,4 @@
-package us.mytheria.manobukkit.entities;
+package me.anjoismysign.manobukkit.entities;
 
 public interface LogicController {
     void pauseLogic();
