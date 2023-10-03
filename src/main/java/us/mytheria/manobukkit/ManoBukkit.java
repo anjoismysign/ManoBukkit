@@ -1,19 +1,19 @@
 package us.mytheria.manobukkit;
 
 import org.bukkit.Bukkit;
-import us.mytheria.manobukkit.entities.AnjoratorFactory;
+import us.mytheria.manobukkit.entities.ManoratorFactory;
 import us.mytheria.manobukkit.entities.collider.ColliderFactory;
 
 public class ManoBukkit {
     private static ManoBukkit instance;
     private final ColliderFactory colliderFactory;
-    private final AnjoratorFactory anjoratorFactory;
+    private final ManoratorFactory manoratorFactory;
     private final String craftBukkitPackage;
     private final String nmsPackage;
 
     private ManoBukkit() {
         colliderFactory = ColliderFactory.getInstance();
-        anjoratorFactory = AnjoratorFactory.getInstance();
+        manoratorFactory = ManoratorFactory.getInstance();
         craftBukkitPackage = Bukkit.getServer().getClass().getPackage().getName() + ".";
         nmsPackage = "net.minecraft.";
     }
@@ -45,7 +45,7 @@ public class ManoBukkit {
         return colliderFactory;
     }
 
-    public AnjoratorFactory getAnjoratorFactory() {
-        return anjoratorFactory;
+    public ManoratorFactory getManoratorFactory() {
+        return manoratorFactory;
     }
 }

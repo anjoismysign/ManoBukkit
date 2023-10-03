@@ -10,7 +10,7 @@ import us.mytheria.manobukkit.ManoBukkit;
 import java.lang.reflect.Method;
 import java.util.Objects;
 
-public class AnjoEntity {
+public class ManoEntity {
     private static final Class<?> CRAFT_ENTITY_CLASS = ManoBukkit.getInstance().getCraftBukkitClass("entity.CraftEntity");
 
     private static final Method NMS_ENTITY;
@@ -45,12 +45,12 @@ public class AnjoEntity {
     private final Entity entity;
 
     @NotNull
-    public static AnjoEntity of(@NotNull Entity entity) {
+    public static ManoEntity of(@NotNull Entity entity) {
         Objects.requireNonNull(entity);
-        return new AnjoEntity(entity);
+        return new ManoEntity(entity);
     }
 
-    private AnjoEntity(Entity entity) {
+    private ManoEntity(Entity entity) {
         this.entity = entity;
     }
 

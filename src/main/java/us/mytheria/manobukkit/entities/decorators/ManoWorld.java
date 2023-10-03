@@ -11,7 +11,7 @@ import us.mytheria.manobukkit.ManoBukkit;
 import java.lang.reflect.Method;
 import java.util.Objects;
 
-public class AnjoWorld {
+public class ManoWorld {
     private static final Class<?> CRAFT_WORLD_CLASS = ManoBukkit.getInstance().getCraftBukkitClass("CraftWorld");
     private static final Class<?> CRAFT_ENTITY_CLASS = ManoBukkit.getInstance().getCraftBukkitClass("entity.CraftEntity");
 
@@ -52,12 +52,12 @@ public class AnjoWorld {
     private final World world;
 
     @NotNull
-    public static AnjoWorld of(@NotNull World world) {
+    public static ManoWorld of(@NotNull World world) {
         Objects.requireNonNull(world);
-        return new AnjoWorld(world);
+        return new ManoWorld(world);
     }
 
-    private AnjoWorld(World world) {
+    private ManoWorld(World world) {
         this.world = world;
     }
 

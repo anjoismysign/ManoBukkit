@@ -13,7 +13,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Objects;
 
-public class AnjoBlockState {
+public class ManoBlockState {
     private static final Class<?> BLOCK_POSITION_CLASS = ManoBukkit.getInstance().getNMSClass("core.BlockPosition");
     private static final Class<?>[] BLOCK_POSITION_CONSTRUCTOR_TYPE = {int.class, int.class, int.class};
     private static final Constructor<?> BLOCK_POSITION_CONSTRUCTOR;
@@ -96,12 +96,12 @@ public class AnjoBlockState {
      * @return the BlobBlockState
      */
     @NotNull
-    public static AnjoBlockState of(@NotNull BlockState blockState) {
+    public static ManoBlockState of(@NotNull BlockState blockState) {
         Objects.requireNonNull(blockState);
-        return new AnjoBlockState(blockState);
+        return new ManoBlockState(blockState);
     }
 
-    private AnjoBlockState(BlockState blockState) {
+    private ManoBlockState(BlockState blockState) {
         this.blockState = blockState;
     }
 
