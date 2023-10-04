@@ -3,6 +3,7 @@ package me.anjoismysign.manobukkit;
 import me.anjoismysign.manobukkit.entities.collider.ColliderFactory;
 import me.anjoismysign.manobukkit.entities.decorators.implementations.ManoratorFactory;
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
 
 public class ManoBukkit {
     private static ManoBukkit instance;
@@ -16,6 +17,8 @@ public class ManoBukkit {
         manoratorFactory = ManoratorFactory.getInstance();
         craftBukkitPackage = Bukkit.getServer().getClass().getPackage().getName() + ".";
         nmsPackage = "net.minecraft.";
+        Location nullLocation = new Location(null, 0, 0, 0);
+        nullLocation.add(0, 0, 0);
     }
 
     public static ManoBukkit getInstance() {

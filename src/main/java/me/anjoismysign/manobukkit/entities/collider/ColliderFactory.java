@@ -17,7 +17,7 @@ public class ColliderFactory {
     }
 
     /**
-     * Creates a new AsyncCollisioner.
+     * Creates a new AsyncCollider.
      * Collision checks and collideFunction will be run asynchronously.
      *
      * @param entity          The entity that's meant to have a BoundingBox.
@@ -37,7 +37,7 @@ public class ColliderFactory {
     }
 
     /**
-     * Creates a new SyncCollisioner.
+     * Creates a new SyncCollider.
      * Collision checks and collideFunction will be run on main thread.
      *
      * @param entity          The entity that's meant to have a BoundingBox.
