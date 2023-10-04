@@ -1,4 +1,4 @@
-package me.anjoismysign.manobukkit.entities;
+package me.anjoismysign.manobukkit.entities.decorators.implementations;
 
 import me.anjoismysign.manobukkit.entities.decorators.ManoBlockState;
 import me.anjoismysign.manobukkit.entities.decorators.ManoEntity;
@@ -30,14 +30,14 @@ public class ManoratorFactory {
     }
 
     public ManoBlockState of(@NotNull BlockState blockState) {
-        return ManoBlockState.of(blockState);
+        return ManitoBlockState.of(blockState);
     }
 
     public ManoWorld of(@NotNull World world) {
-        return ManoWorld.of(world);
+        return ManitoWorld.of(world);
     }
 
     public ManoEntity of(@NotNull Entity entity) {
-        return ManoEntity.of(entity);
+        return ManitoEntity.of(entity);
     }
 }

@@ -1,7 +1,7 @@
 package me.anjoismysign.manobukkit;
 
-import me.anjoismysign.manobukkit.entities.ManoratorFactory;
 import me.anjoismysign.manobukkit.entities.collider.ColliderFactory;
+import me.anjoismysign.manobukkit.entities.decorators.implementations.ManoratorFactory;
 import org.bukkit.Bukkit;
 
 public class ManoBukkit {
@@ -23,6 +23,14 @@ public class ManoBukkit {
             instance = new ManoBukkit();
         }
         return instance;
+    }
+
+    public String getCraftBukkitClassPath(String clazz) {
+        return craftBukkitPackage + clazz;
+    }
+
+    public String getNMSClassPath(String clazz) {
+        return nmsPackage + clazz;
     }
 
     public Class<?> getCraftBukkitClass(String clazz) {
